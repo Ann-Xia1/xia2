@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.h {
+    width: 100%;
+    background-color: #2188b6;
+}
+
+.w {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+}
