@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function secondLargest(numArray) {
+            if (numArray.length < 2) {
+                return null; 
+            } else {
+                numArray.sort((a, b) => b - a); 
+                return numArray[1]; 
+            }
+        }
+        
+        var nums = [3, 5, 1, 2, 4];
+        var secondlargest = secondLargest(nums);
+        console.log(secondlargest);
+    </script>
+</body>
+</html>

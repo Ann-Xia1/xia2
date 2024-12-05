@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function areParenthesesBalanced(str) {
+            const map = {
+                '(': ')',
+                '{': '}',
+                '[': ']'
+            };
+            const stack = [];
+            for (let i = 0; i < str.length; i++) {
+                const char = str[i];
+                if (char in map) {
+                    stack.push(char);
+                } else {
+                    const top = stack.pop();
+                    if (map[top] !== char) {
+                        return false;
+                    }
+                }
+            }
+            return stack.length === 0;
+         }
+ 
+
+        console.log(areParenthesesBalanced("()")); 
+        console.log(areParenthesesBalanced("()[]{}")); 
+        console.log(areParenthesesBalanced("(]")); 
+        console.log(areParenthesesBalanced("([)]")); 
+        console.log(areParenthesesBalanced("{[]}")); 
+
+    </script>
+</body>
+</html>

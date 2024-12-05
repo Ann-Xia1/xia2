@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function replaceSubstring(originalStr, oldSubStr, newSubStr) {
+            return originalStr.split(oldSubStr).join(newSubStr);
+        }
+        
+        var originalStr1 = "Hello World";
+        var oldSubStr1 = "World";
+        var newSubStr1 = "there";
+        var originalStr2 = "abc abc abc";
+        var oldSubStr2 = "abc";
+        var newSubStr2 = "123";
+        var resultStr1 = replaceSubstring(originalStr1, oldSubStr1, newSubStr1);
+        var resultStr2 = replaceSubstring(originalStr2, oldSubStr2, newSubStr2);
+        console.log(resultStr1);
+        console.log(resultStr2);
+
+    </script>
+</body>
+</html>
