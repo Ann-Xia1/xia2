@@ -164,7 +164,22 @@
 .bot-img {
     width: 432px;
     height: 316px;
-    background-color: antiquewhite;
+    background-repeat: no-repeat;
+}
+
+.top-img {
+    background-image: url(https://yarn.bootcss.com/assets/feature-speed.png);
+    background-size: cover;
+}
+
+.center-img {
+    background-image: url(https://yarn.bootcss.com/assets/feature-secure.png);
+    background-size: contain;
+}
+
+.bot-img {
+    background-image: url(https://yarn.bootcss.com/assets/feature-reliable.png);
+    background-size: contain;
 }
 
 .hero {
