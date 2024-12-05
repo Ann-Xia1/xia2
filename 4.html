@@ -8,7 +8,13 @@
 <body>
     <script>
         function secondLargest(numArray) {
-            if (numArray.length < 2) {
+            for (var i = 0; i < numArray.length; i++) {
+                if (i != numArray.indexOf(numArray[i])) {
+                    numArray.splice(i,1);
+                    i--;
+                }
+            }
+            if (numArray.length <= 2) {
                 return null; 
             } else {
                 numArray.sort((a, b) => b - a); 
@@ -16,9 +22,10 @@
             }
         }
         
-        var nums = [3, 5, 1, 2, 4];
+        var nums = [3, 5, 1, 2, 4, 5];
         var secondlargest = secondLargest(nums);
         console.log(secondlargest);
+        console.log(secondLargest([1,2,2,2]));
     </script>
 </body>
 </html>

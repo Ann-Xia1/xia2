@@ -267,10 +267,10 @@ hr {
 
 .footer-left {
     display: flex;
+    color: #5a5a5a;
 
 }
 
-.footer-left span,
 .footer-left span a,
 .footer-right span a {
     color: #1476a2;
