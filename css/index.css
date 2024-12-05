@@ -51,6 +51,7 @@
 .nav-content {
     width: 1110px;
     height: 363px;
+    padding-bottom: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -171,6 +172,7 @@
     background-image: url(https://yarn.bootcss.com/assets/feature-speed.png);
     background-size: cover;
 }
+
 
 .center-img {
     background-image: url(https://yarn.bootcss.com/assets/feature-secure.png);
